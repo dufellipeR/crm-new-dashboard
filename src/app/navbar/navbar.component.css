@@ -1,0 +1,25 @@
+img {
+  height: 40px;
+}
+
+a {
+  cursor: pointer;
+  font-size: 23px;
+}
+
+nav {
+  height: 10vh;
+}
+
+.dropdown-item {
+  font-size: 20px;
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar {
+  padding: 0.8rem 1rem;
+}

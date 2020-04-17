@@ -1,0 +1,16 @@
+app-sidebar {
+  transition: all 300ms;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-left: -150px;
+}
+
+@media (max-width: 756px) {
+  app-funil {
+    margin: 0 auto;
+  }
+}
