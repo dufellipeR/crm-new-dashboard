@@ -1,5 +1,6 @@
 app-sidebar {
   transition: all 300ms;
+  background: #f8f9fa;
 }
 
 .hide {
@@ -10,7 +11,12 @@ app-sidebar {
 }
 
 @media (max-width: 756px) {
-  app-funil {
+  app-funil, app-prospeccoes, app-leads-ganhas, app-leads-perdidas {
     margin: 0 auto;
   }
+}
+
+#sidebar-wrapper {
+  height: 100%;
+  width: 25vh;
 }

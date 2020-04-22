@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div style="display: flex; height: 90vh;">
-  <app-sidebar id="sidebar" class="hide"></app-sidebar>
+  <app-sidebar></app-sidebar>
 
-  <app-funil (situationSidebar)="onChangeSidebar()"></app-funil>
+  <router-outlet></router-outlet>
 </div>

@@ -120,21 +120,21 @@ label {
 
 @media (max-width: 1400px) {
   .stage {
-    width: 233px;
+    width: 290px;
   }
 
   .lead {
-    width: 220px;
+    width: 265px;
   }
 }
 
 @media (min-width: 1900px) {
   .stage {
-    width: 329px;
+    width: 415px;
   }
 
   .lead {
-    width: 300px;
+    width: 380px;
   }
 }
 

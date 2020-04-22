@@ -7,6 +7,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FunilComponent } from './funil/funil.component';
+import { ProspeccoesComponent } from './prospeccoes/prospeccoes.component';
+import { LeadsGanhasComponent } from './leads-ganhas/leads-ganhas.component';
+import { LeadsPerdidasComponent } from './leads-perdidas/leads-perdidas.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { FunilComponent } from './funil/funil.component';
     DashboardComponent,
     NavbarComponent,
     SidebarComponent,
-    FunilComponent
+    FunilComponent,
+    ProspeccoesComponent,
+    LeadsGanhasComponent,
+    LeadsPerdidasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
