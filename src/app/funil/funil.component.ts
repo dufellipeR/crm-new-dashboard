@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-funil',
@@ -6,15 +6,6 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./funil.component.css']
 })
 export class FunilComponent implements OnInit {
-
-  @Input() showSidebar: boolean = false;
-  
-  @Output() situationSidebar = new EventEmitter();
-
-  onClick() {
-    this.showSidebar = !this.showSidebar;
-    this.situationSidebar.emit({ situation: this.showSidebar })
-  }
 
   ngOnInit() {
   
