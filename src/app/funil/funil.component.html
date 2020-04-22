@@ -7,7 +7,7 @@
 
     <div class="div-inputs-filters">
       <div class="form-group" class="input-filters">
-        <label for="exampleFormControlSelect1">Vendedor: </label>
+        <label for="exampleFormControlSelect1" style="line-height: 38px;">Vendedor: </label>
         <select class="form-control" id="exampleFormControlSelect1">
           <option>Fabiana</option>
           <option>Gisela</option>
@@ -18,7 +18,7 @@
 
 
       <div class="form-group" class="input-filters">
-        <label for="exampleFormControlSelect1" style="width: 150px;">Data Inicial: </label>
+        <label for="exampleFormControlSelect1" style="width: 150px; line-height: 38px;">Data Inicial: </label>
         <select class="form-control" id="exampleFormControlSelect1">
           <option>Mês Atual</option>
           <option>Mês Passado</option>
@@ -30,36 +30,30 @@
 
   </div>
 
+  <!-- Estágios  -->
+
   <div class="responsive">
     <div class="repeat-stage">
       <div class="stage">
         <p>Contatado</p>
-        <p>R$ 21.000,00 • 11 Neg.</p>
+        <p>R$ {{this.contatado.valor}} • {{this.contatado.tickets.length}} Neg.</p>
       </div>
 
-      <div class="lead">
+      <div *ngFor="let ticket of this.contatado.tickets" class="lead">
         <div class="align-header-lead">
-          <p>ALL4LABELS - OEE</p>
+          <p>{{ticket.titulo}}</p>
           <div class="therm" style="background-color: yellow;"></div>
         </div>
 
         <div class="align-footer-lead">
-          <p>RS 30.000</p>
+          <p>{{ticket.valorestimado}}</p>
           <div class="therm" style="background-color: red;"></div>
         </div>
       </div>
-      <div class="lead">
-        <div class="align-header-lead">
-          <p>ALL4LABELS - OEE</p>
-          <div class="therm" style="background-color: yellow;"></div>
-        </div>
 
-        <div class="align-footer-lead">
-          <p>RS 30.000</p>
-          <div class="therm" style="background-color: red;"></div>
-        </div>
-      </div>
     </div>
+
+
     <div class="repeat-stage">
       <div class="stage">
         <p>Cliente Potencial</p>
